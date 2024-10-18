@@ -1,0 +1,25 @@
+/* Contenedor general para ambos, productos y carrito */
+.dashboard-container {
+    display: flex;              /* Usamos flexbox para organizar en filas */
+    justify-content: space-between; /* Espaciamos los contenedores entre sí */
+    align-items: flex-start;    /* Alineamos los contenedores al inicio verticalmente */
+    padding: 1rem;
+}
+
+/* Contenedor de productos */
+.container-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    width: 60%;                 /* Ajusta el ancho del contenedor de productos */
+}
+
+/* Contenedor de carrito */
+.container-shopping {
+    display: flex;
+    flex-direction: column;
+    width: 35%;                 /* Ajusta el ancho del carrito */
+    align-items: flex-start;
+    gap: 1rem;
+}

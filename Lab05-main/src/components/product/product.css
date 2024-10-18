@@ -1,0 +1,95 @@
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box; 
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.product {
+    width: 25em;
+    height: 35rem;
+    background-color: #ececec;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.06); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: solid #cecece 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Mantiene la información y el botón dentro */
+}
+
+.product:hover  {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3),
+                0 6px 20px rgba(0, 0, 0, 0.25);
+    transform: scale(1.03);
+}
+
+.image {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;  
+    background-color: #ffffff;  
+}
+
+.image img {
+    width: 100%;  
+    height: 100%; 
+    object-fit: contain;
+}
+
+.information {
+    width: 100%; 
+    min-height: 18rem;
+    background-color: #c6abb9;
+    padding: 0.5rem;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea el contenido al centro */
+    margin-top: 0.5rem;
+}
+
+.information h3 {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.information p {
+    font-size: 11px; /* Ajuste de tamaño para evitar desbordamientos */
+   
+}
+
+button {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: #701c85;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 0.2rem;
+    cursor: pointer;
+    align-self: center; /* Asegura que el botón esté centrado dentro de la card */
+}
+
+button:hover {
+    background-color: #074a07;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3),
+                0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+button svg {
+    color: white;
+    margin: 0;
+}
